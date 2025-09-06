@@ -1,0 +1,126 @@
+/* login */
+
+body.bg-light {
+  background: #0057b7 !important; /* JRMSU blue */
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* Yellow stripes only on the left and right sides */
+body.bg-light::before,
+body.bg-light::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 40px;
+  height: 100vh;
+  background: #ffd600;
+  z-index: 0;
+}
+body.bg-light::before {
+  left: 0;
+}
+body.bg-light::after {
+  right: 0;
+}
+
+.card {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+  position: relative;
+  z-index: 1;
+}
+.form-label, .form-control {
+  color: #000 !important;
+  background-color: #fff !important;
+  border-color: #000 !important;
+}
+.form-control:focus {
+  box-shadow: none;
+  border-color: #000;
+}
+.btn-primary {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #222;
+  border-color: #222;
+  color: #fff;
+}
+h2.text-center {
+  color: #000;
+}
+.dashboard, .signup-card {
+  display: none ;
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 30px;
+  min-width: 350px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+}
+.jrmsu-logo {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 250px;
+  height: auto;
+  z-index: 1000;
+  .jrmsu-goals-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.9); /* White transparent background */
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-size: 14px;
+  color: #000; /* Black text for contrast */
+}
+
+.jrmsu-goals-text h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #003366; /* Dark blue (like JRMSU theme) */
+}
+
+.jrmsu-goals-text p {
+  margin: 0 0 5px 0;
+}
+
+}
+.jrmsu-logo {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 80px;
+}
+
+.jrmsu-goals-text {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  max-width: 300px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 38px;
+  cursor: pointer;
+  font-size: 18px;
+  user-select: none;
+}
+
